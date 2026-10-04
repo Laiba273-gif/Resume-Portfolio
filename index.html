@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laiba — Full Stack Web Developer portfolio and professional resume.">
+  <title>LAIBA — Full Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+<style>
+/* CREATIVE LANDING PAGE — MOBILE FIX */
+@media screen and (max-width: 768px) {
+
+  /* Card ko center aur full width rakho */
+  .project-card.reverse {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Image ka container */
+  .project-card.reverse .project-art {
+    order: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Picture poori dikhane ke liye */
+  .project-card.reverse .project-art img {
+    display: block !important;
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    margin: 0 auto !important;
+  }
+
+  /* Image ke wrapper ki cropping band */
+  .project-card.reverse .project-art picture,
+  .project-card.reverse .project-art figure,
+  .project-card.reverse .project-art .image-wrapper,
+  .project-card.reverse .project-art .image-container {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Agar picture background image se lagi ho */
+  .project-card.reverse .project-art[style*="background-image"] {
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#home" class="logo" aria-label="Laiba home">
+      <span class="logo-box"><div class="logo">
+  <i class="fa-solid fa-crown"></i>
+</div></span>
+      <span>LAIBA<span class="gold">'s</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Stack</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="top-cta" href="https://wa.me/923014531537" target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
+  </header>
+
+  <aside class="social-rail" aria-label="Social links">
+    <a href="https://wa.me/923014531357" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.5 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a12 12 0 0 0 5.7 1.5h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.2-1.3-6.2-3.5-8.4ZM12.1 21.8h-.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.2c0-5.4 4.4-9.7 9.8-9.7 2.6 0 5 1 6.9 2.9a9.7 9.7 0 0 1 2.8 6.9c0 5.4-4.4 9.8-9.7 9.8Zm5.3-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.3 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.3.3-.6.3-1.1.2-1.3-.2-.2-.4-.3-.7-.4Z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/laiba-faisal-a537ba37a/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9v5.7H9.1V8.8h3.5v1.6h.1c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.3 2.4 4.3 5.5v6.5ZM5 7.2a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM6.8 20.5H3.2V8.8h3.6v11.7ZM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0Z"/></svg>
+    </a>
+    <a href="https://github.com/Laiba273-gif" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3A12 12 0 0 0 8.2 23.7c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.4.3.8 1 .8 2v3c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/></svg>
+    </a>
+    
+  </aside>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <div class="availability"><span></span> AVAILABLE FOR WEB PROJECTS</div>
+        <p class="eyebrow">FULL STACK WEB DEVELOPER</p>
+        <h1>Digital products<br>with <i>presence.</i></h1>
+        <p class="intro">I'm <strong>Laiba</strong> — a full web developer with 1 year of hands-on experience, creating responsive, modern and user-focused web experiences.</p>
+        <div class="hero-buttons">
+          <a class="btn gold-btn" href="#work">Explore my work <span>↗</span></a>
+          <a class="btn line-btn" href="https://wa.me/923014531357?text=Hi%20Laiba%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">
+            <span class="wa-mini">◉</span> Message on WhatsApp
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><b>01</b> YEAR EXPERIENCE</span>
+          <span><b>2025</b> TEVTA CERTIFIED</span>
+          <span><b>∞</b> CURIOUS MIND</span>
+        </div>
+      </div>
+
+      <div class="identity-card">
+        <div class="card-orbit"></div>
+        <div class="card-top"><span>LAIBA / 01</span><span>DEV — 2026</span></div>
+        <div class="profile-photo">
+  <img src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D" alt="Laiba — Full Web Developer">
+</div>
+        <div class="identity-bottom">
+          <div>
+            <span>WEB DEVELOPER</span>
+            <h2>Laiba</h2>
+          </div>
+          <div class="location">PAKISTAN<br><em>ONLINE / GLOBAL</em></div>
+        </div>
+        <div class="scan-line"></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Capabilities">
+      <div>FRONT-END <b>✦</b> BACK-END <b>✦</b> RESPONSIVE DESIGN <b>✦</b> UI DEVELOPMENT <b>✦</b> ACCESSIBLE WEB <b>✦</b> CLEAN CODE <b>✦</b> FRONT-END <b>✦</b></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-index">01 / PROFILE</div>
+      <div class="content">
+        <div class="heading-row">
+          <div>
+            <p class="gold-label">WHO I AM</p>
+            <h2>Not just websites.<br><span>Experiences.</span></h2>
+            
+          </div>
+          <p class="side-copy">A developer who cares about both what happens under the hood and what people feel when they use it.</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card big">
+            <span class="card-index">A /</span>
+            <h3>My approach</h3>
+            <p>I build with structure first, then add the details that make a digital product memorable. Semantic HTML, responsive CSS and thoughtful interaction are the foundation of every interface.</p>
+            <img src="https://media.istockphoto.com/id/2289796050/photo/digital-transformation-and-innovation-concept-with-a-hands-on-approach-to-technology-and.jpg?s=612x612&w=0&k=20&c=CT-zftjRzNdaqiV1pCaNaeLDy_laADEQWV2EntwP_cM=" alt="Laiba — Full Web Developer">
+            <div class="signature"><span></span></div>
+          </article>
+          <article class="about-card">
+            <span class="card-index">B /</span>
+            <h3>What I value</h3>
+            <ul>
+              <li>Clean & maintainable code</li>
+              <li>Mobile-first thinking</li>
+              <li>Accessible experiences</li>
+              <li>Premium visual details</li>
+            </ul>
+          </article>
+          <article class="about-card quote">
+            <span class="quote-mark">“</span>
+            <p>Good design gets attention. Great development makes people stay.</p>
+          </article>
+        </div>
+      </div>
+      
+    </section>
+    </section>  <!-- About section ends here -->
+
+<!-- ========== EDUCATION SECTION ========== -->
+<section class="education-section" id="education">
+
+  <div class="education-heading">
+    <span class="edu-subtitle">MY ACADEMIC JOURNEY</span>
+    <h2>Education <strong>& Qualifications</strong></h2>
+    <p>Learning, growing, and building my future.</p>
+    <div class="edu-line"></div>
+  </div>
+
+  <div class="education-grid">
+
+    <!-- MATRIC -->
+    <article class="education-card">
+      <div class="edu-top">
+        <span class="edu-icon">🎓</span>
+        <span class="edu-number">01</span>
+      </div>
+      <span class="education-tag">SECONDARY EDUCATION</span>
+      <h3>Matriculation</h3>
+      <p class="education-place">Matric Certificate</p>  
+<p class="education-desc">
+  Completed my Matriculation under the Board of
+  Intermediate and Secondary Education (BISE), Lahore,
+  building a strong foundation in academic learning.
+</p>
+      <div class="edu-date">
+        <span class="edu-dot"></span>
+        2020 — 2021
+      </div>
+    </article>
+
+    <!-- INTERMEDIATE -->
+    <article class="education-card">
+      <div class="edu-top">
+        <span class="edu-icon">📚</span>
+        <span class="edu-number">02</span>
+      </div>
+      <span class="education-tag">HIGHER SECONDARY</span>
+      <h3>Intermediate</h3>
+      <p class="education-place">Intermediate Certificate</p>
+      <p class="education-desc">
+        Completed my Intermediate (F.A.) from Government Women Degree College, Lahore, from 2022 to 2023, developing my academic knowledge and communication skills.
+      </p>
+      <div class="edu-date">
+        <span class="edu-dot"></span>
+        2022 — 2023
+      </div>
+    </article>
+
+    <!-- BSC -->
+    <article class="education-card">
+      <div class="edu-top">
+        <span class="edu-icon">🏆</span>
+        <span class="edu-number">03</span>
+      </div>
+      <span class="education-tag">BACHELOR'S DEGREE</span>
+      <h3>BSc</h3>
+      <p class="education-place">Bachelor of Computer Science</p>
+      <p class="education-desc">
+        Pursued bachelor's-level studies while continuing to
+        develop my knowledge and professional skills.Pursued my Bachelor's degree in Computer Science at Islamic University of Pakistan (IUP), Sialkot, from 2024 to 2025, gaining knowledge of computer science, programming, and software development.
+      </p>
+      <div class="edu-date">
+        <span class="edu-dot"></span>
+        2024 — 2025
+      </div>
+    </article>
+
+    <!-- TEVTA TRAINING -->
+    <article class="education-card">
+      <div class="edu-top">
+        <span class="edu-icon">💻</span>
+        <span class="edu-number">04</span>
+      </div>
+      <span class="education-tag">PROFESSIONAL TRAINING</span>
+      <h3>Web Development</h3>
+      <p class="education-place">TEVTA Training</p>
+      <p class="education-desc">
+        Completed six months of web development training,
+        gaining practical knowledge of website structure,
+        styling, and responsive web design.Skilled in using Figma for UI/UX design and prototyping, WordPress for website development, CorelDRAW for graphic design and vector illustrations, and Canva for creating attractive social media graphics, presentations, and digital designs.
+      </p>
+      <div class="edu-date">
+        <span class="edu-dot"></span>
+        2025 · 6 Months
+      </div>
+    </article>
+
+  </div>
+  
+<!-- ========== MS OFFICE SECTION ========== -->
+<section class="ms-office-section" id="ms-office">
+
+  <div class="ms-office-heading">
+    <span>PRODUCTIVITY SKILLS</span>
+    <h2>Microsoft <strong>Office</strong></h2>
+    <p>Professional tools for productivity and presentation.</p>
+    <div class="ms-office-line"></div>
+  </div>
+
+  <div class="ms-office-grid">
+
+    <article class="ms-office-card">
+
+      <div class="ms-office-top">
+        <div class="ms-office-logo">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="ms-office-tag">OFFICE SUITE</span>
+      </div>
+
+      <h3>MS Office</h3>
+
+      <p class="ms-office-description">
+        Proficient in Microsoft Office applications for creating
+        professional documents, organizing data, managing
+        spreadsheets, and designing engaging presentations.
+      </p>
+
+      <div class="ms-office-tools">
+        <span>Word</span>
+        <span>Excel</span>
+        <span>PowerPoint</span>
+      </div>
+
+      <div class="ms-office-bottom">
+        <span class="ms-office-dot"></span>
+        DOCUMENTS · DATA · PRESENTATIONS
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ========== MS OFFICE STYLING ========== -->
+<style>
+.ms-office-section {
+  padding: 85px 7%;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(212, 175, 55, 0.08),
+      transparent 55%
+    ),
+    #080808;
+  color: #f5f5f5;
+}
+
+.ms-office-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.ms-office-heading > span {
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.ms-office-heading h2 {
+  margin: 15px 0;
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.ms-office-heading h2 strong {
+  color: #d4af37;
+}
+
+.ms-office-heading p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.ms-office-line {
+  width: 75px;
+  height: 2px;
+  margin: 22px auto 0;
+  background: linear-gradient(
+    90deg, transparent, #d4af37, transparent
+  );
+}
+
+.ms-office-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 520px);
+  justify-content: center;
+}
+
+.ms-office-card {
+  position: relative;
+  padding: 32px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(212, 175, 55, 0.12),
+      transparent 45%
+    ),
+    linear-gradient(145deg, #171717, #090909);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 22px;
+  transition: transform 0.35s ease,
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.ms-office-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg, #9b7418, #fff1a8, #d4af37
+  );
+  transition: width 0.4s ease;
+}
+
+.ms-office-card:hover {
+  transform: translateY(-7px);
+  border-color: #d4af37;
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.12);
+}
+
+.ms-office-card:hover::before {
+  width: 100%;
+}
+
+.ms-office-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.ms-office-logo {
+  width: 58px;
+  height: 58px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 15px;
+}
+
+.ms-office-logo span {
+  display: block;
+  border-radius: 2px;
+  background: linear-gradient(135deg, #fff1a8, #d4af37);
+}
+
+.ms-office-logo span:nth-child(2) {
+  opacity: 0.8;
+}
+
+.ms-office-logo span:nth-child(3) {
+  opacity: 0.65;
+}
+
+.ms-office-tag {
+  color: #d4af37;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.ms-office-card h3 {
+  margin: 0 0 13px;
+  font-size: 26px;
+}
+
+.ms-office-description {
+  color: #a5a5a5;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+
+.ms-office-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.ms-office-tools span {
+  padding: 8px 14px;
+  color: #e6d69b;
+  background: rgba(212, 175, 55, 0.07);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 25px;
+  font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.ms-office-tools span:hover {
+  color: #080808;
+  background: #d4af37;
+}
+
+.ms-office-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  color: #888;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.ms-office-dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  background: #d4af37;
+  border-radius: 50%;
+  box-shadow: 0 0 9px rgba(212, 175, 55, 0.7);
+}
+
+@media (max-width: 600px) {
+  .ms-office-section {
+    padding: 65px 6%;
+  }
+
+  .ms-office-card {
+    padding: 24px;
+  }
+
+  .ms-office-top {
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ms-office-card,
+  .ms-office-card::before,
+  .ms-office-tools span {
+    transition: none;
+  }
+}
+</style>
+</section>
+
+
+
+<!-- ========== EDUCATION CSS ========== -->
+<style>
+.education-section {
+  position: relative;
+  padding: 100px 7%;
+  background:
+    radial-gradient(ellipse at top, rgba(212,175,55,.07), transparent 55%),
+    #080808;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+.education-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.edu-subtitle {
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.education-heading h2 {
+  margin: 16px 0;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 600;
+}
+
+.education-heading h2 strong {
+  color: #d4af37;
+}
+
+.education-heading > p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.edu-line {
+  width: 75px;
+  height: 2px;
+  margin: 25px auto 0;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  box-shadow: 0 0 12px rgba(212,175,55,.5);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.education-card {
+  position: relative;
+  padding: 32px;
+  background: linear-gradient(145deg, #171717, #0c0c0c);
+  border: 1px solid rgba(212,175,55,.22);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform .35s ease,
+              border-color .35s ease,
+              box-shadow .35s ease;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #9b7418, #fff0a3, #d4af37);
+  transition: width .4s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(212,175,55,.7);
+  box-shadow: 0 15px 40px rgba(212,175,55,.09);
+}
+
+.education-card:hover::before {
+  width: 100%;
+}
+
+.edu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.edu-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background: rgba(212,175,55,.08);
+  border: 1px solid rgba(212,175,55,.3);
+  border-radius: 15px;
+}
+
+.edu-number {
+  color: rgba(212,175,55,.45);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.education-tag {
+  color: #d4af37;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.education-card h3 {
+  margin: 13px 0 8px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.education-place {
+  color: #d4af37;
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.education-desc {
+  color: #999;
+  font-size: 13px;
+  line-height: 1.9;
+  min-height: 74px;
+  margin-bottom: 24px;
+}
+
+.edu-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid rgba(212,175,55,.3);
+  border-radius: 30px;
+  color: #e8d69b;
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
+.edu-dot {
+  width: 7px;
+  height: 7px;
+  background: #d4af37;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(212,175,55,.7);
+}
+
+/* TABLET & MOBILE */
+@media (max-width: 700px) {
+  .education-section {
+    padding: 70px 6%;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .education-card {
+    padding: 25px;
+  }
+
+  .education-desc {
+    min-height: auto;
+  }
+
+  .education-heading {
+    margin-bottom: 35px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .education-card,
+  .education-card::before {
+    transition: none;
+  }
+}
+</style>
+
+
+<section id="projects">
+  <!-- Your Projects section -->
+</section>
+
+<section id="contact">
+  <!-- Your Contact section -->
+</section>
+
+    <section class="section" id="skills">
+      <div class="section-index">02 / STACK</div>
+      <div class="content">
+        <div class="heading-row">
+          <div>
+            <p class="gold-label">TECHNICAL SKILLS</p>
+            <h2>The stack behind<br><span>the screen.</span></h2>
+          </div>
+          <p class="side-copy">From the first HTML element to the final responsive breakpoint — detail matters.</p>
+        </div>
+       <div class="stack-grid">
+
+  <article class="stack-card">
+    <span>01</span>
+    <strong>HTML5</strong>
+    <p>
+  HTML5 provides the semantic structure and foundation for modern,
+  responsive, and accessible websites.
+</p>
+    <div class="progress"><i style="width:96%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>02</span>
+    <strong>CSS3</strong>
+    <p>
+  CSS3 brings modern styling, responsive layouts, animations, and
+  interactive visual effects to web pages.
+</p>
+    <div class="progress"><i style="width:94%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>03</span>
+    <strong>JavaScript</strong>
+    <p>
+  JavaScript adds interactivity, dynamic content, animations, and
+  engaging user experiences to modern websites.
+</p>
+    <div class="progress"><i style="width:86%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>04</span>
+    <strong>Responsive</strong>
+    <p>
+  Responsive design ensures websites look and work smoothly across
+  desktops, tablets, and mobile devices.
+</p>
+    <div class="progress"><i style="width:95%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>05</span>
+    <strong>Git / GitHub</strong>
+    <p>
+  Git and GitHub provide version control, project management, and
+  collaboration for modern web development.
+</p>
+    <div class="progress"><i style="width:88%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>06</span>
+    <strong>UI / UX</strong>
+    <p>
+  UX/UI design combines visual systems, intuitive layouts, typography,
+  and user experience to create engaging digital interfaces.
+</p>
+    <div class="progress"><i style="width:90%"></i></div>
+  </article>
+
+  <!-- NEW -->
+
+  <article class="stack-card">
+    <span>07</span>
+    <strong>WordPress</strong>
+    <p>
+  WordPress enables professional website development with customizable
+  themes, plugins, and responsive layouts.
+</p>
+    <div class="progress"><i style="width:90%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>08</span>
+    <strong>Figma</strong>
+    <p>Figma is used to create modern UI designs, wireframes, prototypes,
+  and interactive digital interfaces.
+</p>
+    <div class="progress"><i style="width:88%"></i></div>
+  </article>
+
+  <article class="stack-card">
+    <span>09</span>
+    <strong>CorelDRAW</strong>
+    <p>
+  CorelDRAW is used to create professional logos, illustrations,
+  branding materials, and high-quality vector graphics.
+</p>
+    <div class="progress"><i style="width:85%"></i></div>
+  </article>
+
+</div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-index">03 / SELECTED WORK</div>
+      <div class="content">
+        <div class="heading-row">
+          <div>
+            <p class="gold-label">RECENT BUILDS</p>
+            <h2>Projects that<br><span>make an entrance.</span></h2>
+          </div>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="profile-photo">
+  <img src="https://images.unsplash.com/photo-1678690832871-8b9993c76aa8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="Laiba — Full Web Developer">
+</div>
+            <div class="project-info"><p>01 / WEB EXPERIENCE</p><h3>Modern Portfolio</h3><p>A responsive developer portfolio with a strong visual identity and accessible page structure.</p><div class="project-tags"><b>HTML5</b><b>CSS3</b><b>Responsive</b></div></div>
+          </article>
+          <article class="project-card reverse">
+            <div class="project-art gold-art"><span>02</span> <img src="https://media.istockphoto.com/id/2210688897/photo/ux-ui-design-web-and-application-user-design-concepts-web-design-application-design-user.webp?a=1&b=1&s=612x612&w=0&k=20&c=3vTDBUL24n5mH1Hpu3kf9uVqjItR6a2lboOWV_VFQlE=" alt="Laiba — Full Web Developer">
+</div>
+            <div class="project-info"><p>02 / INTERFACE</p><h3>Creative Landing Page</h3><p>A premium landing page concept combining bold typography, micro-interactions and responsive sections.</p><div class="project-tags"><b>UI</b><b>CSS</b><b>UX</b></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="section-index">04 / JOURNEY</div>
+      <div class="content">
+        <div class="heading-row">
+          <div>
+            <p class="gold-label">EXPERIENCE & EDUCATION</p>
+            <h2>One year in.<br><span>Just getting started.</span></h2>
+          </div>
+        </div>
+        <div class="journey">
+          <article><div class="year">2026</div><div><p class="gold-label">01 YEAR EXPERIENCE</p><h3>Full Web Developer</h3><p>I’m Laiba, a Full Web Developer with 1 year of experience in building modern, responsive, and user-friendly websites. I completed TEVTA Web Development Training in 2025 and have hands-on skills in HTML5, CSS3, JavaScript, responsive design, UI development, and Git & GitHub. I’m passionate about turning ideas into clean, engaging digital experiences and continuously growing my skills in modern web technologies.
+</p></div></article>
+          <article><div class="year">2025</div><div><p class="gold-label">TEVTA</p><h3>Web Development Training</h3><p>I’m Laiba, a Full Web Developer with 6 months of experience creating modern, responsive, and user-friendly websites. I completed a 6-month Web Development Training from TEVTA in 2025, gaining practical knowledge of HTML5, CSS3, JavaScript, responsive design, UI development, and Git & GitHub.
+
+I’m passionate about transforming ideas into engaging digital experiences and continuously growing my skills in modern web technologies.
+
+Have a project in mind? Let’s turn your idea into a modern, professional, and impactful website. Explore my work and let’s build something amazing together.
+</p></div></article>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-main">
+        <p class="gold-label">05 / CONTACT</p>
+        <h2>Let's build something<br><i>unforgettable.</i></h2>
+        <p>Have a project, collaboration or opportunity? Send me a message directly.</p>
+        <div class="contact-actions">
+          <a class="whatsapp-big" href="https://wa.me/923014531357?text=Hi%20Laiba%2C%20I%20want%20to%20discuss%20a%20web%20project." target="_blank" rel="noopener">
+            <span class="wa-circle">◔</span>
+            <span><small>DIRECT MESSAGE</small> WhatsApp Laiba</span>
+            <strong>↗</strong>
+          </a>
+          <a class="mail-big" href="mailto:flaiba500@gmail.com"><span>flaiba500@gmail.com</span><strong>↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- GOLD FOOTER -->
+<footer class="gold-footer">
+
+  <div class="gold-line"></div>
+
+
+  <p>
+    Turning ideas into modern digital experiences.
+  </p>
+         
+        </div>
+  <div class="footer-socials">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">WhatsApp</a>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Laiba</span>
+    <span>Full Web Developer</span>
+  </div>
+
+  <div class="gold-line bottom-line"></div>
+
+</footer>
+  <footer>
+    <span>© 2026 LAIBA — FULL WEB DEVELOPER</span>
+    <span>DESIGNED & BUILT WITH <b>✦</b></span>
+  </footer>
+
+  <script>
+    const glow = document.querySelector('.cursor-glow');
+    window.addEventListener('pointermove', e => {
+      glow.style.transform = `translate3d(${e.clientX - 110}px, ${e.clientY - 110}px, 0)`;
+    });
+  </script>
+  <article class="project-card modern-portfolio-card">
+<!-- MODERN PORTFOLIO: MOBILE IMAGE FIX -->
+<style>
+@media (max-width: 768px) {
+  .modern-portfolio-card-fix {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .modern-portfolio-card-fix img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .modern-portfolio-card-fix .project-image,
+  .modern-portfolio-card-fix .project-img,
+  .modern-portfolio-card-fix .project-preview,
+  .modern-portfolio-card-fix .image-wrapper,
+  .modern-portfolio-card-fix figure {
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+</style>
+
+<script>
+(function () {
+  function fixModernPortfolio() {
+    if (window.innerWidth > 768) return;
+
+    const clean = text =>
+      text.toLowerCase().replace(/\s+/g, " ").trim();
+
+    const elements = Array.from(
+      document.querySelectorAll("h1,h2,h3,h4,h5,h6")
+    );
+
+    const heading =
+      elements.find(el => clean(el.textContent) === "modern portfolio") ||
+      elements.find(el => clean(el.textContent).includes("modern portfolio"));
+
+    if (!heading) return;
+
+    function hasImage(element) {
+      if (element.querySelector("img, picture, video")) return true;
+
+      return Array.from(element.querySelectorAll("*")).some(el =>
+        getComputedStyle(el).backgroundImage.includes("url(")
+      );
+    }
+
+    let card = heading;
+
+    for (let parent = heading.parentElement, i = 0;
+         parent && i < 10;
+         parent = parent.parentElement, i++) {
+      card = parent;
+      if (hasImage(parent)) break;
+    }
+
+    card.classList.add("modern-portfolio-card-fix");
+    card.style.setProperty("margin-left", "auto", "important");
+    card.style.setProperty("margin-right", "auto", "important");
+    card.style.setProperty("justify-self", "center", "important");
+
+    card.querySelectorAll("img").forEach(img => {
+      [
+        ["display", "block"],
+        ["width", "100%"],
+        ["max-width", "100%"],
+        ["height", "auto"],
+        ["max-height", "none"],
+        ["object-fit", "contain"],
+        ["object-position", "center"],
+        ["margin-left", "auto"],
+        ["margin-right", "auto"]
+      ].forEach(([property, value]) =>
+        img.style.setProperty(property, value, "important")
+      );
+
+      const wrapper = img.parentElement;
+
+      if (wrapper && wrapper !== card) {
+        wrapper.style.setProperty("max-height", "none", "important");
+        wrapper.style.setProperty("aspect-ratio", "auto", "important");
+        wrapper.style.setProperty("overflow", "visible", "important");
+
+        if (/image|preview|visual|thumb|media|figure/i.test(wrapper.className)) {
+          wrapper.style.setProperty("height", "auto", "important");
+          wrapper.style.setProperty("display", "flex", "important");
+          wrapper.style.setProperty("align-items", "center", "important");
+          wrapper.style.setProperty("justify-content", "center", "important");
+        }
+      }
+    });
+
+    card.querySelectorAll("*").forEach(el => {
+      if (getComputedStyle(el).backgroundImage.includes("url(")) {
+        el.style.setProperty("background-size", "contain", "important");
+        el.style.setProperty("background-position", "center center", "important");
+        el.style.setProperty("background-repeat", "no-repeat", "important");
+      }
+    });
+  }
+
+  fixModernPortfolio();
+  window.addEventListener("resize", fixModernPortfolio);
+})();
+</script></article>
+</script>
+
+<style>
+/* MODERN PORTFOLIO MOBILE FIX */
+@media screen and (max-width: 768px) {
+
+  .modern-fix {
+    width: 100% !important;
+    max-width: 460px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    justify-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .modern-fix img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    margin: 0 auto !important;
+  }
+
+  .modern-fix .project-image,
+  .modern-fix .project-img,
+  .modern-fix .project-preview,
+  .modern-fix .project-visual,
+  .modern-fix .image-wrapper,
+  .modern-fix figure {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .modern-fix [style*="background-image"] {
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+</style>
+<article class="project-card My-approach-mobile-card">
+<!-- MY APPROACH: MOBILE IMAGE FIX -->
+<style>
+@media screen and (max-width: 768px) {
+
+  .approach-mobile-scope {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .approach-mobile-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .approach-mobile-scope img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .approach-mobile-image-wrap {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+  }
+
+  .approach-mobile-scope figure,
+  .approach-mobile-scope picture {
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+  }
+}
+</style>
+<article class="project-card My-approach-mobile-card">
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const normalize = text =>
+    text.toLowerCase().replace(/\s+/g, " ").trim();
+
+  const headings = Array.from(
+    document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+  );
+
+  const heading = headings.find(el =>
+    normalize(el.textContent).includes("my approach")
+  );
+
+  if (!heading) return;
+
+  const section = heading.closest("section") ||
+                  heading.parentElement?.parentElement;
+
+  if (!section) return;
+
+  section.classList.add("approach-mobile-scope");
+
+  const card = heading.closest(
+    'article, [class*="card"], [class*="approach"]'
+  );
+
+  if (card) {
+    card.classList.add("approach-mobile-card");
+  }
+
+  section.querySelectorAll("img").forEach(img => {
+    let parent = img.parentElement;
+
+    if (parent && parent !== section) {
+      parent.classList.add("approach-mobile-image-wrap");
+    }
+  });
+
+});
+
+</script>
+<article class="project-card My-approach-mobile-card">
+<!-- MY APPROACH CARD: MOBILE FIX -->
+<style>
+@media screen and (max-width: 768px) {
+
+  .my-approach-mobile-fixed {
+    width: 100% !important;
+    max-width: 480px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .my-approach-mobile-fixed img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 auto !important;
+  }
+
+  .my-approach-mobile-fixed picture,
+  .my-approach-mobile-fixed figure {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+  }
+}
+</style>
+</article>
+<script>
+(function () {
+  function fixMyApproachCard() {
+    const normalize = text =>
+      text.toLowerCase().replace(/\s+/g, " ").trim();
+
+    const elements = Array.from(
+      document.querySelectorAll("body *")
+    );
+
+    const target = elements.find(el =>
+      normalize(el.textContent) === "my approach"
+    ) || elements.find(el =>
+      normalize(el.textContent).includes("my approach") &&
+      el.children.length === 0
+    );
+
+    if (!target) return;
+
+    let card = target;
+
+    // Find the nearest parent containing an image
+    for (let i = 0; i < 10 && card; i++) {
+      const hasImage = card.querySelector("img, picture, figure");
+
+      const hasBackground = Array.from(
+        card.querySelectorAll("*")
+      ).some(el =>
+        getComputedStyle(el).backgroundImage !== "none" &&
+        getComputedStyle(el).backgroundImage.includes("url(")
+      );
+
+      if (hasImage || hasBackground) break;
+      if (card.parentElement) {
+        card = card.parentElement;
+      } else {
+        break;
+      }
+    }
+
+    card.classList.add("my-approach-mobile-fixed");
+
+    card.querySelectorAll("img").forEach(img => {
+      img.style.setProperty("width", "100%", "important");
+      img.style.setProperty("height", "auto", "important");
+      img.style.setProperty("max-height", "none", "important");
+      img.style.setProperty("object-fit", "contain", "important");
+      img.style.setProperty("object-position", "center", "important");
+
+      let wrapper = img.parentElement;
+
+      while (wrapper && wrapper !== card) {
+        const classNames = String(wrapper.className || "");
+
+        if (/image|photo|visual|preview|media|thumbnail/i.test(classNames)) {
+          wrapper.style.setProperty("height", "auto", "important");
+          wrapper.style.setProperty("max-height", "none", "important");
+          wrapper.style.setProperty("aspect-ratio", "auto", "important");
+          wrapper.style.setProperty("overflow", "visible", "important");
+        }
+
+        wrapper = wrapper.parentElement;
+      }
+    });
+
+    // If the picture uses CSS background-image
+    card.querySelectorAll("*").forEach(el => {
+      const bg = getComputedStyle(el).backgroundImage;
+
+      if (bg !== "none" && bg.includes("url(")) {
+        el.style.setProperty("background-size", "contain", "important");
+        el.style.setProperty("background-position", "center", "important");
+        el.style.setProperty("background-repeat", "no-repeat", "important");
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fixMyApproachCard);
+  } else {
+    fixMyApproachCard();
+  }
+
+  window.addEventListener("resize", fixMyApproachCard);
+})();
+
+</script>
+
+<!-- CREATIVE LANDING PAGE: MOBILE IMAGE FIX -->
+
+<style>
+@media screen and (max-width: 768px) {
+
+  .creative-landing-card-fix {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .creative-landing-main-img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 auto !important;
+  }
+
+  .creative-landing-image-wrap {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  .creative-landing-bg-fix {
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    min-height: 220px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+</style>
+
+<script>
+(function () {
+  function fixCreativeLandingPage() {
+    const normalise = text =>
+      text.toLowerCase().replace(/\s+/g, " ").trim();
+
+    const elements = Array.from(document.querySelectorAll("body *"));
+
+    const matches = elements.filter(el =>
+      normalise(el.textContent).includes("creative landing page")
+    );
+
+    matches.sort((a, b) =>
+      a.textContent.length - b.textContent.length
+    );
+
+    const title = matches[0];
+    if (!title) return;
+
+    function containsVisual(el) {
+      if (el.matches("img, picture, video")) return true;
+      if (el.querySelector("img, picture, video")) return true;
+
+      const nodes = [el, ...el.querySelectorAll("*")];
+
+      return nodes.some(node => {
+        if (node.tagName === "IMG") return true;
+
+        return getComputedStyle(node)
+          .backgroundImage.includes("url(");
+      });
+    }
+
+    let card = title;
+
+    for (let i = 0; card && i < 10; i++) {
+      if (containsVisual(card)) break;
+      card = card.parentElement;
+    }
+
+    if (!card || card === document.body) return;
+
+    card.classList.add("creative-landing-card-fix");
+
+    const images = Array.from(card.querySelectorAll("img"));
+
+    if (images.length) {
+      images.sort((a, b) => {
+        const areaA = a.naturalWidth * a.naturalHeight;
+        const areaB = b.naturalWidth * b.naturalHeight;
+        return areaB - areaA;
+      });
+
+      const mainImage = images[0];
+      mainImage.classList.add("creative-landing-main-img");
+
+      let wrapper = mainImage.parentElement;
+
+      for (let i = 0; wrapper && wrapper !== card && i < 3; i++) {
+        wrapper.classList.add("creative-landing-image-wrap");
+        wrapper = wrapper.parentElement;
+      }
+    } else {
+      const backgrounds = [card, ...card.querySelectorAll("*")]
+        .filter(el =>
+          getComputedStyle(el).backgroundImage.includes("url(")
+        );
+
+      backgrounds.sort((a, b) => {
+        const ra = a.getBoundingClientRect();
+        const rb = b.getBoundingClientRect();
+        return (rb.width * rb.height) - (ra.width * ra.height);
+      });
+
+      if (backgrounds[0]) {
+        backgrounds[0].classList.add("creative-landing-bg-fix");
+      }
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded", fixCreativeLandingPage
+    );
+  } else {
+    fixCreativeLandingPage();
+  }
+
+  window.addEventListener("load", fixCreativeLandingPage);
+  window.addEventListener("resize", fixCreativeLandingPage);
+})();
+</script>
+</body>
+</html>
